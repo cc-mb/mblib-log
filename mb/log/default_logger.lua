@@ -1,5 +1,5 @@
 local HandleLogger = require "handle_logger"
 
-local DefaultLogger = HandleLogger.new(io.stderr, HandleLogger.LEVEL.WARNING)
+local DEFAULT_LOGGER = HandleLogger.new(io.stderr, HandleLogger.LEVEL.WARNING)
 
-return DefaultLogger
+return DEFAULT_LOGGER
