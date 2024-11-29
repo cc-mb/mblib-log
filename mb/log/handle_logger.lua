@@ -1,4 +1,4 @@
-local Logger = require "logger"
+local Logger = require "mb.log.logger"
 
 --- Write handle logger.
 ---@class HandleLogger

@@ -1,4 +1,4 @@
-local Logger = require "logger"
+local Logger = require "mb.log.logger"
 
 --- Void logger.
 local VOID_LOGGER = Logger.new()
