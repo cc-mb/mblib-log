@@ -17,8 +17,8 @@ function MultiLogger.new(...)
 end
 
 function MultiLogger:log(level, message)
-  for _, v in pairs(self._loggers) do
-    v:log(level, message)
+  for _, logger in pairs(self._loggers) do
+    logger:log(level, message)
   end
 end
 
