@@ -56,4 +56,4 @@ function Logger:trace(message)
   self:log(Logger.LEVEL.TRACE, message)
 end
 
-return HandleLogger
+return PrefixedLogger
