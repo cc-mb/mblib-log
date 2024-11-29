@@ -21,7 +21,7 @@ end
 
 function HandleLogger:log(level, message)
   if level <= self._level then
-    self._handle:write(message)
+    self._handle:write(message .. "\n")
   end
 end
 
