@@ -3,8 +3,8 @@ local Logger = require "mb.log.logger"
 --- Logger pack.
 ---@class MultiLogger
 ---@field private _loggers table Packed loggers.
-local MultiLogger = {}
-setmetatable(MultiLogger, {__index = Logger})
+local MultiLogger = setmetatable({}, {__index = Logger})
+MultiLogger.__index = MultiLogger
 
 --- Constructor
 ---@param ... Logger Packed loggers.
