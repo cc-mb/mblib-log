@@ -28,31 +28,31 @@ end
 
 --- Report severe issue.
 ---@param message string Logged message.
-function Logger:error(message)
+function PrefixedLogger:error(message)
   self:log(Logger.LEVEL.ERROR, message)
 end
 
 --- Report issue.
 ---@param message string Logged message.
-function Logger:warning(message)
+function PrefixedLogger:warning(message)
   self:log(Logger.LEVEL.WARNING, message)
 end
 
 --- Report important info.
 ---@param message string Logged message.
-function Logger:info(message)
+function PrefixedLogger:info(message)
   self:log(Logger.LEVEL.INFO, message)
 end
 
 --- Report debugging info.
 ---@param message string Logged message.
-function Logger:debug(message)
+function PrefixedLogger:debug(message)
   self:log(Logger.LEVEL.DEBUG, message)
 end
 
 --- Report tracing info.
 ---@param message string Logged message.
-function Logger:trace(message)
+function PrefixedLogger:trace(message)
   self:log(Logger.LEVEL.TRACE, message)
 end
 
